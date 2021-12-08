@@ -1,5 +1,7 @@
 package com.moringaschool.newscout.ui;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -23,7 +25,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class NewsDetailFragment extends Fragment {
+public class NewsDetailFragment extends Fragment implements  View.OnClickListener{
 
     @BindView(R.id.articleImageView)
     ImageView mArticleImageView;
@@ -69,7 +71,17 @@ public class NewsDetailFragment extends Fragment {
         mAuthorTextView.setText(mArticle.getAuthor());
         mDescriptionTextView.setText(mArticle.getDescription());
         mContentTextView.setText(mArticle.getContent());
+        mSaveNewsBtn.setOnClickListener(this);
 
         return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+          if(v == mSaveNewsBtn){
+              Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                      Uri.parse(mArticle.getUrl()));
+              startActivity(webIntent);
+          }
     }
 }
