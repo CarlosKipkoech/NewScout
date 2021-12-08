@@ -1,4 +1,4 @@
-package com.moringaschool.newscout;
+package com.moringaschool.newscout.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,8 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import com.moringaschool.newscout.R;
+import com.moringaschool.newscout.models.Note;
+
 import io.realm.RealmResults;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.viewholder> {

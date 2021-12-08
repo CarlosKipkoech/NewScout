@@ -1,8 +1,10 @@
-package com.moringaschool.newscout;
+package com.moringaschool.newscout.models;
+import org.parceler.Parcel;
+
 import io.realm.RealmObject;
 
 
-
+@Parcel
 public class Note extends RealmObject {
     private  String title;
     private String description;

@@ -12,16 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Newscout">
         <activity
-            android:name=".AddNote"
+            android:name=".ui.NewsDetail"
             android:exported="false" />
         <activity
-            android:name=".MyNotes"
+            android:name=".ui.Business"
             android:exported="false" />
         <activity
-            android:name=".TrendingNews"
+            android:name=".ui.TechonologyNews"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.EntertainmentNews"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SPortsNews"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddNote"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MyNotes"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TrendingNews"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

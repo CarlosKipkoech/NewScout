@@ -1,4 +1,4 @@
-package com.moringaschool.newscout;
+package com.moringaschool.newscout.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 
-import java.util.ArrayList;
+import com.moringaschool.newscout.R;
+import com.moringaschool.newscout.adapters.NotesAdapter;
+import com.moringaschool.newscout.models.Note;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,7 +36,7 @@ public class MyNotes extends AppCompatActivity{
         ButtonOpenAddNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyNotes.this,AddNote.class);  //intent Addnote form
+                Intent intent = new Intent(MyNotes.this, AddNote.class);  //intent Addnote form
                 startActivity(intent );
 
             }

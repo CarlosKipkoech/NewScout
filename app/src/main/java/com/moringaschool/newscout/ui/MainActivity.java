@@ -1,4 +1,4 @@
-package com.moringaschool.newscout;
+package com.moringaschool.newscout.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.moringaschool.newscout.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn_getStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,TrendingNews.class); //declare new activity intent
+                Intent intent = new Intent(MainActivity.this, dashboard.class); //declare new activity intent
                 startActivity(intent);
             }
         });

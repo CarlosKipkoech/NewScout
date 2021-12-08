@@ -1,14 +1,15 @@
-package com.moringaschool.newscout;
+package com.moringaschool.newscout.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
+import com.moringaschool.newscout.R;
+import com.moringaschool.newscout.models.Note;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
